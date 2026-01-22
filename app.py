@@ -11,7 +11,7 @@ and give a rating out of 5. Only accept Python code as input."""
 
 # Initialize Gemini model
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
+    model_name="gemini-1.5-flash-001",
     system_instruction=system_prompt
 )
 
