@@ -32,3 +32,7 @@ if st.button("🔍 Review Code"):
                 st.write(chunk.text)
     else:
         st.warning("⚠ Please enter a Python code snippet first.")
+for m in genai.list_models():
+    if "generateContent" in m.supported_generation_methods:
+        print(m.name)
+
